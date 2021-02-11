@@ -32,7 +32,7 @@ This repository demonstrates the following architecture: <br><br>
 6. Deploy the code present in [GetSASTokenFunc\HTTPTriggerCSharp.cs](GetSASTokenFunc\HTTPTriggerCSharp.cs) into the Azure Function from VSCode: [tutorial](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp)
 7. Localize the `Custom_Domain` App Settings on the Azure Functions for your environment:
 
-   ![Custom Domain](img\Custom_Domain.png)
+   ![Custom Domain](img/Custom_Domain.png)
 
 8. Grab the **Function URL** from the deployed Function:
    <br><div style="text-align:left"><img src="img\FunctionURL.png" width=500></div>
