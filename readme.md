@@ -6,7 +6,7 @@ End-to-end demonstration of Valet Key Architecture [Pattern](https://docs.micros
 
 ---
 
-This repository demonstrates the following architecture:
+This repository demonstrates the following architecture: <br><br>
 ![Architecture diagram](img/Architecture.png)
 
 1. Accessing data via [UNC](https://www.lifewire.com/unc-universal-naming-convention-818230#:~:text=The%20Universal%20Naming%20Convention%20is,file%20sharing%20technologies%20like%20Samba.) from an On-Prem [File Share](https://www.techrepublic.com/blog/data-center/how-to-share-a-folder-in-windows-server-2012/) (while impersonating a Service Account via [PsExec](https://docs.microsoft.com/en-us/sysinternals/downloads/psexec)).
@@ -64,3 +64,8 @@ Here we see:
 - For each **file**, a temporary SAS URL is generated, taking into account the folder structure
   - We browse to each SAS URL and compare against the files copied
 - Next time `uploadbatch.ps1` runs (not shown), it will only copy deltas from the Fileshare into Azure Storage
+
+Once **1 minute** expires (we set this when calling the Azure Function) and we attempt to browse to/refresh our previously working SAS URL, we'll be met with this:
+![Expired SAS URL](img/expired-sas.png)
+
+At which point, the SAS URL must be generated again.
