@@ -17,9 +17,9 @@ This repository demonstrates the following architecture: <br><br>
 3. Forwarding the SAS URL to a client (our browser).
 4. Accessing stored file via SAS URL for the time duration configured by the caller.
 
-## Deployment Steps
-
 ---
+
+## Deployment Steps
 
 1. Install `azcopy` using the script [UploadBlobs\InstallAzCopy.ps1](UploadBlobs\InstallAzCopy.ps1).
 2. Install `PsExec` on the same machine to be able to call `uploadbatch.ps1` using the Service Account creds that has access to the File Share (rather than the local user account).
