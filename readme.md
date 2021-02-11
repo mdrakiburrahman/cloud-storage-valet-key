@@ -4,10 +4,10 @@ End-to-end demonstration of Valet Key Architecture [Pattern](https://docs.micros
 
 ## Overview
 
----
-
 This repository demonstrates the following architecture: <br><br>
 ![Architecture diagram](img/Architecture.png)
+
+---
 
 1. Accessing data via [UNC](https://www.lifewire.com/unc-universal-naming-convention-818230#:~:text=The%20Universal%20Naming%20Convention%20is,file%20sharing%20technologies%20like%20Samba.) from an On-Prem [File Share](https://www.techrepublic.com/blog/data-center/how-to-share-a-folder-in-windows-server-2012/) (while impersonating a Service Account via [PsExec](https://docs.microsoft.com/en-us/sysinternals/downloads/psexec)).
 
