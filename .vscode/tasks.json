@@ -12,7 +12,7 @@
 			"type": "process",
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/GetSASTokenFunc"
+				"cwd": "${workspaceFolder}/GetSASTokenADLS"
 			}
 		},
 		{
@@ -31,7 +31,7 @@
 			},
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/GetSASTokenFunc"
+				"cwd": "${workspaceFolder}/GetSASTokenADLS"
 			}
 		},
 		{
@@ -47,7 +47,7 @@
 			"type": "process",
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/GetSASTokenFunc"
+				"cwd": "${workspaceFolder}/GetSASTokenADLS"
 			}
 		},
 		{
@@ -64,14 +64,14 @@
 			"dependsOn": "clean release",
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/GetSASTokenFunc"
+				"cwd": "${workspaceFolder}/GetSASTokenADLS"
 			}
 		},
 		{
 			"type": "func",
 			"dependsOn": "build",
 			"options": {
-				"cwd": "${workspaceFolder}/GetSASTokenFunc/bin/Debug/netcoreapp3.1"
+				"cwd": "${workspaceFolder}/GetSASTokenADLS/bin/Debug/netcoreapp3.1"
 			},
 			"command": "host start",
 			"isBackground": true,

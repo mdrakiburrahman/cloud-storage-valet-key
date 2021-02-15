@@ -56,7 +56,7 @@ namespace SASGenerator.Function
             }
 
             // Initiate connection to Storage Account
-            var storageAccount = CloudStorageAccount.Parse(System.Environment.GetEnvironmentVariable("AzureWebJobsStorage", EnvironmentVariableTarget.Process));
+            var storageAccount = CloudStorageAccount.Parse(System.Environment.GetEnvironmentVariable("AzureDataLakeStorage", EnvironmentVariableTarget.Process));
             var blobClient = storageAccount.CreateCloudBlobClient();
             var container = blobClient.GetContainerReference(data.container.ToString());
 
